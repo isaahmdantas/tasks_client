@@ -13,7 +13,7 @@ import React, { Component } from 'react';
      }
      
      async loadTasks() {
-       let response = await fetch(`http://localhost:3001/tasks`);
+       let response = await fetch(`http://localhost:3002/tasks`);
        const tasks = await response.json();
        this.setState({ tasks: tasks });
      }
